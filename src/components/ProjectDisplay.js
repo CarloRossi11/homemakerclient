@@ -2,7 +2,7 @@ import React from 'react'
 
 
 
-const ProjectDisplay = () => {
+const ProjectDisplay = (props) => {
 
     const getProjects = async () => {
         const response = await fetch("http://localhost:3000/projects")
@@ -16,7 +16,9 @@ const ProjectDisplay = () => {
   
     return (
         <>
+  
           <h1>Projects Displayed Here</h1>
+    
         </>
     )
 }
