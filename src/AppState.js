@@ -5,7 +5,7 @@ import React, { useContext, useReducer } from "react";
 //////////////////////
 
 const initialState = {
-  url: "http://homemakerapi.herokuapp.com",
+  url: "http://homemakerapidos.herokuapp.com",
   token: null,
   username: null,
   notes: null,

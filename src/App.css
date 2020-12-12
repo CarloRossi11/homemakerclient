@@ -26,3 +26,20 @@ header nav div:hover {
   background-color: whitesmoke;
   color: green
 }
+
+/* Auth */
+
+.auth form {
+  padding: 50px;
+}
+
+.auth form input{
+  background-color: lightgrey;
+  color: purple;
+  padding: 8px;
+  border-radius: 5px;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 1.2em;
+}
