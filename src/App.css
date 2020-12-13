@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+header h1 {
+  color: purple;
+}
+
+span{
+  color: green;
+}
+
 header nav {
   display: flex;
   justify-content: space-around;
@@ -42,4 +50,18 @@ header nav div:hover {
   margin: 10px auto;
   text-align: center;
   font-size: 1.2em;
+  transition: background-color .2s, color .2s;
+}
+
+.auth form input:hover {
+  background-color: whitesmoke;
+  color: green
+}
+
+.point:hover{
+  cursor: pointer;
+}
+
+.project{
+  margin: 10px auto;
 }

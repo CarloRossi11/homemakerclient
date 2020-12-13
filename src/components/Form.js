@@ -48,12 +48,14 @@ const Form = (props) => {
         <input
           type="text"
           name="title"
+          placeholder="Project Title"
           value={formData.title}
           onChange={handleChange}
         />
         <input
-          type="text"
-          name="description"
+          type="textarea"
+          name="Description"
+          placeholder="description"
           value={formData.description}
           onChange={handleChange}
         />

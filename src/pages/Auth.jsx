@@ -70,7 +70,7 @@ const Auth = (props) => {
           value={formData.password}
           onChange={handleChange}
         />
-        <input type="submit" value={type} />
+        <input className="point" type="submit" value={type} />
       </form>
     </div>
   );

@@ -7,7 +7,7 @@ const Nav =(props) => {
   const {state, dispatch} = useAppState()
 
   return <header>
-    <h1>HomeMaker</h1>
+    <h1 className="Purple">Home<span>Maker</span></h1>
     <nav>
       <Link to="/"> <div>Home</div></Link>
       {!state.token ? (<><Link to="/auth/signup"> <div>Signup</div></Link>

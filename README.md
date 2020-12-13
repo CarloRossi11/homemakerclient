@@ -1,3 +1,27 @@
+HomeMaker App
+
+Technologies Used:
+Ruby
+Ruby on Rails
+React
+Javascript
+HTML
+CSS
+
+Approach Taken:
+built the API using ruby on rails and scaffold my models
+added suthentication gems bcrypt, jwt, and rack-cors
+built the frontend client using create react app
+
+ToDo:
+I would like to add additonal styling and additional models, I would also like to use a one to many schema with the many being the toolds/materials needed for the projects
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
