@@ -9,7 +9,7 @@ import {useAppState} from "./AppState.js"
 
 const App = (props) => {
 
-  const {state, dispatch} = useAppState()
+  const {dispatch} = useAppState()
   React.useState(() => {
     const auth = JSON.parse(window.localStorage.getItem("auth"))
     if (auth){

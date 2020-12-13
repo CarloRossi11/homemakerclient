@@ -1,4 +1,4 @@
-import React, { useContext, useReducer } from "react";
+import React, { useReducer } from "react";
 
 //////////////////////
 // INITIAL STATE
@@ -8,7 +8,7 @@ const initialState = {
   url: "http://homemakerapidos.herokuapp.com",
   token: null,
   username: null,
-  notes: null,
+  projects: null,
   new: {
     title: "",
     body: "",
@@ -30,23 +30,23 @@ const reducer = (state, action) => {
     case "auth":
       newState = { ...state, ...action.payload };
       return newState;
-      break;
+      
     case "logout":
       newState = { ...state, token: null, username: null };
       window.localStorage.removeItem("auth");
       return newState;
-      break;
-    case "getNotes":
-      newState = { ...state, notes: action.payload };
+      
+    case "getProjects":
+      newState = { ...state, projects: action.payload };
       return newState;
-      break;
+      
     case "select":
       newState = { ...state, edit: action.payload };
       return newState;
-      break;
+      
     default:
       return state;
-      break;
+      
   }
 };
 
@@ -75,6 +75,3 @@ export const AppState = (props) => {
 export const useAppState = () => {
   return React.useContext(AppContext);
 };
-
-
-

@@ -10,6 +10,7 @@ const Auth = (props) => {
   const [userData, setUserData] = React.useState(null);
   const { state, dispatch } = useAppState();
 
+
   React.useEffect(() => {
     if (userData) {
       const { token, user } = userData;
