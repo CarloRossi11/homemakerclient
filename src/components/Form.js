@@ -54,7 +54,7 @@ const Form = (props) => {
         />
         <input
           type="textarea"
-          name="Description"
+          name="description"
           placeholder="description"
           value={formData.description}
           onChange={handleChange}
