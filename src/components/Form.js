@@ -53,8 +53,8 @@ const Form = (props) => {
         />
         <input
           type="text"
-          name="body"
-          value={formData.body}
+          name="description"
+          value={formData.description}
           onChange={handleChange}
         />
         <input type="submit" value={action} />

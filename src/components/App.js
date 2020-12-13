@@ -1,11 +1,11 @@
-import './App.css';
+import '../App.css';
 import React from 'react';
-import Nav from './components/Nav.js'
+import Nav from './Nav.js'
 import {Switch, Route} from "react-router-dom"
-import Home from "./pages/Home.jsx"
-import Auth from "./pages/Auth.jsx"
-import Dashboard from "./pages/Dashboard.jsx"
-import {useAppState} from "./AppState.js"
+import Home from "../pages/Home.jsx"
+import Auth from "../pages/Auth.jsx"
+import Dashboard from "../pages/Dashboard.jsx"
+import {useAppState} from "../AppState.js"
 
 const App = (props) => {
 
@@ -25,8 +25,8 @@ const App = (props) => {
       <Route path="/" component={Nav} />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/auth/:form" component={Auth} />
-        <Route exact path="/dashboard" component={Dashboard} />
+        <Route  path="/auth/:form" component={Auth} />
+        <Route  path="/dashboard" component={Dashboard} />
       </Switch>
     </div>
   );

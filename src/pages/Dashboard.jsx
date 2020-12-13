@@ -37,7 +37,7 @@ const Dashboard = (props) => {
           {state.projects.map((project) => (
             <div className="project" key={project.id}>
               <h2>{project.title}</h2>
-              <h4>{project.body}</h4>
+              <h4>{project.description}</h4>
               <button
                 onClick={() => {
                   dispatch({ type: "select", payload: project });
