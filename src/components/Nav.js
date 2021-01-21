@@ -10,12 +10,17 @@ const Nav =(props) => {
     <h1 className="Purple">Home<span>Maker</span></h1>
     <nav>
       <Link to="/"> <div>Home</div></Link>
-      {!state.token ? (<><Link to="/auth/signup"> <div>Signup</div></Link>
-      <Link to="/auth/login"> <div>Login</div></Link></>) : null}
-      {state.token ? <div onClick={() => {
+      {!state.token ? (
+        <>
+          <Link to="/auth/signup"> <div>Signup</div></Link>
+          <Link to="/auth/login"> <div>Login</div></Link>
+        </>
+      ) : null}
+      {state.token ? (<><Link to="/dashboard"> <div>Projects</div></Link>
+      <div onClick={() => {
         dispatch({type: "logout"})
         props.history.push("/")
-      }}>Logout</div> : null}
+      }}>Logout</div></>) : null}
     </nav>
   </header>
 }

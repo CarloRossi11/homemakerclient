@@ -8,6 +8,8 @@ Javascript
 HTML
 CSS
 
+Live Demo: https://elegant-ride-8e4cfc.netlify.app/
+
 Approach Taken:
 built the API using ruby on rails and scaffold my models
 added suthentication gems bcrypt, jwt, and rack-cors
@@ -17,10 +19,7 @@ ToDo:
 I would like to add additonal styling and additional models, I would also like to use a one to many schema with the many being the toolds/materials needed for the projects
 
 
-
-
-
-
+~~*~*~*~*~*~*-<+>-*~*~*~*~*~*~*~~
 
 # Getting Started with Create React App
 

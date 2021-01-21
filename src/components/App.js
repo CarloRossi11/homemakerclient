@@ -30,7 +30,6 @@ const App = (props) => {
         <Route  path="/auth/:form" component={Auth} />
         <Route  path="/dashboard" component={Dashboard} />
       </Switch>
-      <p>hello</p>
     </div>
     </Layout>
   );
