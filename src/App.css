@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+body {
+  scroll-behavior: smooth;
+  text-align: center;
+}
+
 header h1 {
   color: purple;
 }
@@ -33,6 +38,16 @@ header nav div {
 header nav div:hover {
   background-color: whitesmoke;
   color: green
+}
+
+.smalls {
+  margin: auto;
+  color: #113743;
+  font-size: 12px;
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  border-top: 1px solid #113743;
 }
 
 /* Auth */

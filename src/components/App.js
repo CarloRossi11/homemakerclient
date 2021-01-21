@@ -1,5 +1,6 @@
 import '../App.css';
 import React from 'react';
+import Layout from './Layout.js'
 import Nav from './Nav.js'
 import {Switch, Route} from "react-router-dom"
 import Home from "../pages/Home.jsx"
@@ -21,6 +22,7 @@ const App = (props) => {
   }, [])
 
   return (
+    <Layout>
     <div className="App">
       <Route path="/" component={Nav} />
       <Switch>
@@ -28,7 +30,9 @@ const App = (props) => {
         <Route  path="/auth/:form" component={Auth} />
         <Route  path="/dashboard" component={Dashboard} />
       </Switch>
+      <p>hello</p>
     </div>
+    </Layout>
   );
 }
 
