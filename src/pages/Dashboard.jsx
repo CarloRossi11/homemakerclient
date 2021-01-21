@@ -2,6 +2,7 @@ import React from 'react'
 import {useAppState} from "../AppState.js"
 import {Route, Link} from "react-router-dom"
 import Form from "../components/Form.js"
+import Button from 'react-bootstrap/Button';
 
 const Dashboard = (props) => {
   const { state, dispatch } = useAppState();
@@ -27,7 +28,7 @@ const Dashboard = (props) => {
       <div className="dashboard">
         <h1>{username}'s Projects</h1>
         <Link to="/dashboard/new">
-          <button>New Project</button>
+          <Button>New Project</Button>
         </Link>
         <Route
           path="/dashboard/:action"
@@ -38,15 +39,15 @@ const Dashboard = (props) => {
             <div className="project" key={project.id}>
               <h2>{project.title}</h2>
               <h4>{project.description}</h4>
-              <button
+              <Button
                 onClick={() => {
                   dispatch({ type: "select", payload: project });
                   props.history.push("/dashboard/edit");
                 }}
               >
                 Edit Project
-              </button>
-              <button
+              </Button>
+              <Button
                 onClick={() => {
                   fetch(url + "/projects/" + project.id, {
                     method: "delete",
@@ -57,7 +58,7 @@ const Dashboard = (props) => {
                 }}
               >
                 Delete Project
-              </button>
+              </Button>
             </div>
           ))}
         </ul>

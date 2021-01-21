@@ -7,6 +7,8 @@ import Home from "../pages/Home.jsx"
 import Auth from "../pages/Auth.jsx"
 import Dashboard from "../pages/Dashboard.jsx"
 import {useAppState} from "../AppState.js"
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const App = (props) => {
 
