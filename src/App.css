@@ -80,3 +80,21 @@ header nav div:hover {
 .project{
   margin: 10px auto;
 }
+
+/* Nav */
+
+.projectTitle{
+  margin-top: 2%;
+}
+
+.projects{
+  margin: auto;
+}
+
+.project{
+  margin: 3%;
+}
+
+.projectbuttons{
+  margin: 1%;
+}

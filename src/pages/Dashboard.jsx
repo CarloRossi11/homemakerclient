@@ -26,7 +26,7 @@ const Dashboard = (props) => {
   const loaded = () => {
     return (
       <div className="dashboard">
-        <h1>{username}'s Projects</h1>
+        <h1 className="projectTitle">{username}'s Projects</h1>
         <Link to="/dashboard/new">
           <Button>New Project</Button>
         </Link>
@@ -34,12 +34,12 @@ const Dashboard = (props) => {
           path="/dashboard/:action"
           render={(rp) => <Form {...rp} getProjects={getProjects} />}
         />
-        <ul>
+        <ul className="projects">
           {state.projects.map((project) => (
             <div className="project" key={project.id}>
               <h2>{project.title}</h2>
               <h4>{project.description}</h4>
-              <Button
+              <Button className="projectbuttons"
                 onClick={() => {
                   dispatch({ type: "select", payload: project });
                   props.history.push("/dashboard/edit");
@@ -47,7 +47,7 @@ const Dashboard = (props) => {
               >
                 Edit Project
               </Button>
-              <Button
+              <Button className="projectbuttons"
                 onClick={() => {
                   fetch(url + "/projects/" + project.id, {
                     method: "delete",
