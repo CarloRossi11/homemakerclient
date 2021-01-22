@@ -1,28 +1,30 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import {useAppState} from "../AppState.js"
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Button from 'react-bootstrap/Button';
 
 const Nav =(props) => {
 
   const {state, dispatch} = useAppState()
 
-  return <header>
-    <h1 className="Purple">Home<span>Maker</span></h1>
+  return <Jumbotron>
+    <h1 className="title">Home<span>Maker</span></h1>
     <nav>
-      <Link to="/"> <div>Home</div></Link>
+      <Link to="/"> <Button className="backhome">Home</Button></Link>
       {!state.token ? (
         <>
-          <Link to="/auth/signup"> <div>Signup</div></Link>
-          <Link to="/auth/login"> <div>Login</div></Link>
+          <Link to="/auth/signup"> <Button variant="success">Signup</Button></Link>
+          <Link to="/auth/login"> <Button variant="success">Login</Button></Link>
         </>
       ) : null}
-      {state.token ? (<><Link to="/dashboard"> <div>Projects</div></Link>
-      <div onClick={() => {
+      {state.token ? (<><Link to="/dashboard"> <Button variant="success">Projects</Button></Link>
+      <Button variant="success" onClick={() => {
         dispatch({type: "logout"})
         props.history.push("/")
-      }}>Logout</div></>) : null}
+      }}>Logout</Button></>) : null}
     </nav>
-  </header>
+  </Jumbotron>
 }
 
 export default Nav

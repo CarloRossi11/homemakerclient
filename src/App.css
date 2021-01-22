@@ -7,53 +7,33 @@ body {
   text-align: center;
 }
 
-header h1 {
-  color: purple;
+/* Nav */
+
+.title{
+  padding: 2%;
+  font-size: 400%;
+  text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+    color: purple;
 }
 
 span{
   color: green;
 }
-span2{
+.homer{
   color: purple;
 }
 
-header nav {
-  display: flex;
-  justify-content: space-around;
+.backhome{
+  background-color: purple;
+  border-color: purple;
 }
-
-header nav a {
-  color: green;
-  text-decoration: none;
-}
-
-header nav div {
-  font-size: larger;
-  background-color: lightgray;
-  color: purple;
-  width: 200px;
-  border-radius: 7px;
-  transition: background-color .2s, color .2s;
-  padding: 10px;
-}
-
-header nav div:hover {
-  background-color: whitesmoke;
-  color: green
-}
-
-.smalls {
-  color: black;
-  font-size: 12px;
-  max-width: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5% auto;
-  padding: 2%;
-  border-top: 1px solid black;
-  
+.backhome:hover{
+  background-color: #6a006a;
+  border-color: #630063;
 }
 
 /* Auth */
@@ -83,16 +63,8 @@ header nav div:hover {
   cursor: pointer;
 }
 
-.project{
-  margin: 10px auto;
-}
 
-/* Nav */
-
-.projectTitle{
-  margin-top: 2%;
-}
-
+/* Dashboard */
 .projects{
   margin: auto;
 }
@@ -105,8 +77,6 @@ header nav div:hover {
   margin: 1%;
 }
 
-/* Dashboard */
-
 ul{
   margin: auto;
   padding: 0%;
@@ -117,4 +87,17 @@ ul{
 .homies{
   color: purple;
   padding: 2%;
+}
+
+/* Footer */
+.smalls {
+  color: black;
+  font-size: 12px;
+  max-width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5% auto;
+  padding: 2%;
+  border-top: 1px solid black;
 }
