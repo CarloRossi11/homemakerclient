@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 import React from 'react';
 import Layout from './Layout.js'
@@ -7,7 +8,6 @@ import Home from "../pages/Home.jsx"
 import Auth from "../pages/Auth.jsx"
 import Dashboard from "../pages/Dashboard.jsx"
 import {useAppState} from "../AppState.js"
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const App = (props) => {
@@ -24,7 +24,7 @@ const App = (props) => {
   }, [])
 
   return (
-    <Layout>
+    <Layout className="App">
     <div className="App">
       <Route path="/" component={Nav} />
       <Switch>
