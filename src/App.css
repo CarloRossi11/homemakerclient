@@ -14,6 +14,9 @@ header h1 {
 span{
   color: green;
 }
+span2{
+  color: purple;
+}
 
 header nav {
   display: flex;
@@ -47,8 +50,8 @@ header nav div:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px auto;
-  padding: 20px;
+  margin: 5% auto;
+  padding: 2%;
   border-top: 1px solid black;
   
 }
@@ -107,4 +110,11 @@ header nav div:hover {
 ul{
   margin: auto;
   padding: 0%;
+}
+
+/* Home */
+
+.homies{
+  color: purple;
+  padding: 2%;
 }
