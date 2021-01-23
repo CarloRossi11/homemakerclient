@@ -49,7 +49,7 @@ span{
 }
 
 .auth form input{
-  background-color: lightgrey;
+  background-color: #e9ecef;
   color: purple;
   padding: 8px;
   border-radius: 5px;
@@ -58,15 +58,11 @@ span{
   text-align: center;
   font-size: 1.2em;
   transition: background-color .2s, color .2s;
+  max-width: 30%;
 }
-
 .auth form input:hover {
   background-color: whitesmoke;
   color: green
-}
-
-.point:hover{
-  cursor: pointer;
 }
 
 

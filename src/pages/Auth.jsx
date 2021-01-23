@@ -1,5 +1,8 @@
 import React from 'react'
 import {useAppState} from "../AppState.js"
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+
 
 const Auth = (props) => {
   const type = props.match.params.form;
@@ -57,7 +60,31 @@ const Auth = (props) => {
 
   return (
     <div className="auth">
-      <form onSubmit={handleSubmit}>
+      <Form onSubmit={handleSubmit}>
+        <Form.Group controlId="formBasicEmail">
+          <Form.Control 
+            type="text"
+            name="username"
+            placeholder="Username"
+            value={formData.username}
+            onChange={handleChange}
+          />
+        </Form.Group>
+
+        <Form.Group controlId="formBasicPassword">
+          <Form.Control 
+            type="password"
+            name="password"
+            placeholder="Password"
+            value={formData.password}
+            onChange={handleChange}
+          />
+        </Form.Group>
+        <Button variant="primary" type="submit" value={type}>Submit</Button>
+      </Form>
+
+
+      {/* <form onSubmit={handleSubmit}>
         <input
           type="text"
           name="username"
@@ -73,9 +100,32 @@ const Auth = (props) => {
           onChange={handleChange}
         />
         <input className="point" type="submit" value={type} />
-      </form>
+      </form> */}
     </div>
   );
 };
+
+// <Form onSubmit={handleSubmit}>
+//   <Form.Group controlId="formBasicEmail">
+//     <Form.Control 
+//       type="text"
+//       name="username"
+//       placeholder="username"
+//       value={formData.username}
+//       onChange={handleChange}
+//     />
+//   </Form.Group>
+
+//   <Form.Group controlId="formBasicPassword">
+//     <Form.Control 
+//       type="password"
+//       name="password"
+//       placeholder="password"
+//       value={formData.password}
+//       onChange={handleChange}
+//     />
+//   </Form.Group>
+//   <Button variant="primary" type="submit" value={type}/>
+// </Form>
 
 export default Auth

@@ -3,6 +3,7 @@ import {useAppState} from "../AppState.js"
 import {Route, Link} from "react-router-dom"
 import Form from "../components/Form.js"
 import Button from 'react-bootstrap/Button';
+import Spinner from 'react-bootstrap/Spinner'
 
 const Dashboard = (props) => {
   const { state, dispatch } = useAppState();
@@ -65,7 +66,7 @@ const Dashboard = (props) => {
       </div>
     );
   };
-  return projects ? loaded() : <h1>Loading...</h1>;
+  return projects ? loaded() : <Spinner animation="border" variant="success" />;
 };
 
 export default Dashboard;
