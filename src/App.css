@@ -35,6 +35,12 @@ span{
   background-color: #6a006a;
   border-color: #630063;
 }
+.backhome:focus{
+  background-color: #6a006a;
+  border-color: #630063;
+  outline-color: #630063;
+}
+
 
 /* Auth */
 
@@ -91,7 +97,6 @@ ul{
 
 /* Footer */
 .smalls {
-  color: black;
   font-size: 12px;
   max-width: 20%;
   display: flex;
@@ -99,5 +104,15 @@ ul{
   justify-content: center;
   margin: 5% auto;
   padding: 2%;
-  border-top: 1px solid black;
+  border-top: 1px solid gainsboro;
+}
+
+.port{
+  color: rgb(169, 169, 169);
+  transition: all .75s;
+}
+.port:hover{
+  color: purple;
+  text-decoration: none;
+  font-size: 125%;
 }
