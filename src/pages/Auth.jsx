@@ -105,27 +105,4 @@ const Auth = (props) => {
   );
 };
 
-// <Form onSubmit={handleSubmit}>
-//   <Form.Group controlId="formBasicEmail">
-//     <Form.Control 
-//       type="text"
-//       name="username"
-//       placeholder="username"
-//       value={formData.username}
-//       onChange={handleChange}
-//     />
-//   </Form.Group>
-
-//   <Form.Group controlId="formBasicPassword">
-//     <Form.Control 
-//       type="password"
-//       name="password"
-//       placeholder="password"
-//       value={formData.password}
-//       onChange={handleChange}
-//     />
-//   </Form.Group>
-//   <Button variant="primary" type="submit" value={type}/>
-// </Form>
-
 export default Auth

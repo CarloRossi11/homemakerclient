@@ -29,7 +29,7 @@ const Dashboard = (props) => {
       <div className="dashboard">
         <h1 className="projectTitle">{username}'s Projects</h1>
         <Link to="/dashboard/new">
-          <Button>New Project</Button>
+          <Button variant="success">New Project</Button>
         </Link>
         <Route
           path="/dashboard/:action"
@@ -40,7 +40,7 @@ const Dashboard = (props) => {
             <div className="project" key={project.id}>
               <h2>{project.title}</h2>
               <h4>{project.description}</h4>
-              <Button className="projectbuttons"
+              <Button variant="primary" className="projectbuttons"
                 onClick={() => {
                   dispatch({ type: "select", payload: project });
                   props.history.push("/dashboard/edit");
@@ -48,7 +48,7 @@ const Dashboard = (props) => {
               >
                 Edit Project
               </Button>
-              <Button className="projectbuttons"
+              <Button variant="outline-danger" className="projectbuttons"
                 onClick={() => {
                   fetch(url + "/projects/" + project.id, {
                     method: "delete",

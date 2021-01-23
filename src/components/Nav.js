@@ -11,15 +11,15 @@ const Nav =(props) => {
   return <Jumbotron>
     <h1 className="title">Home<span>Maker</span></h1>
     <nav>
-      <Link to="/"> <Button variant="outline-primary" className="backhome">Home</Button></Link>
+      <Link to="/"> <Button className="navbut" variant="outline-primary">Home</Button></Link>
       {!state.token ? (
         <>
-          <Link to="/auth/signup"> <Button variant="outline-success">Signup</Button></Link>
-          <Link to="/auth/login"> <Button variant="outline-success">Login</Button></Link>
+          <Link to="/auth/signup"> <Button className="navbut" variant="outline-success">Signup</Button></Link>
+          <Link to="/auth/login"> <Button className="navbut" variant="outline-success">Login</Button></Link>
         </>
       ) : null}
-      {state.token ? (<><Link to="/dashboard"> <Button variant="success">Projects</Button></Link>
-      <Button variant="success" onClick={() => {
+      {state.token ? (<><Link to="/dashboard"> <Button className="navbut" variant="outline-success">Projects</Button></Link>
+      <Button className="navbut" variant="outline-success" onClick={() => {
         dispatch({type: "logout"})
         props.history.push("/")
       }}>Logout</Button></>) : null}
