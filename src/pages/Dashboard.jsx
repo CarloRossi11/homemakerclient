@@ -24,10 +24,13 @@ const Dashboard = (props) => {
     getProjects();
   }, []);
 
+  const capitalStr = () => username.replace(/^\w/, function(c) {
+    return c.toUpperCase();
+  });
   const loaded = () => {
     return (
       <div className="dashboard">
-        <h1 className="projectTitle">{username}'s Projects</h1>
+        <h1 className="projectTitle">{capitalStr({username})}'s <span>Projects</span></h1>
         <Link to="/dashboard/new">
           <Button variant="success">New Project</Button>
         </Link>

@@ -70,6 +70,11 @@ a{
   border-radius: 10PX;
 }
 
+.projectTitle{
+  color: #007bff;
+  padding: 2%;
+}
+
 .projectbuttons{
   margin: 1%;
 }
@@ -112,4 +117,25 @@ ul{
   color: #007bff;
   text-decoration: none;
   font-size: 125%;
+}
+
+@media all and (max-width: 430px) {
+
+  h3{
+    padding: 1% 5%;
+  }
+
+  .smalls{
+    max-width: 50%;
+  }
+
+  .project{
+    margin: 5% 5%;
+    padding: 1%;
+  }
+
+  .auth form input{
+    max-width: 75%;
+  }
+
 }

@@ -68,6 +68,7 @@ const Auth = (props) => {
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="formBasicEmail">
           <Form.Control 
+            className="authinput"
             type="text"
             name="username"
             placeholder="Username"
@@ -78,6 +79,7 @@ const Auth = (props) => {
 
         <Form.Group controlId="formBasicPassword">
           <Form.Control 
+            className="authinput"
             type="password"
             name="password"
             placeholder="Password"
