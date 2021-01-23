@@ -58,8 +58,13 @@ const Auth = (props) => {
     });
   };
 
+  const capitalStr = () => type.replace(/^\w/, function(c) {
+    return c.toUpperCase();
+});
+
   return (
     <div className="auth">
+      <h1 className="authtitle">{capitalStr({type})}</h1>
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="formBasicEmail">
           <Form.Control 

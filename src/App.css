@@ -86,6 +86,11 @@ ul{
   padding: 2%;
 }
 
+.authtitle{
+  color: green;
+  padding-top: 2%;
+}
+
 /* Footer */
 .smalls {
   font-size: 12px;
